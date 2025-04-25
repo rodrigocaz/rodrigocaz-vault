@@ -77,17 +77,17 @@ def main():
                 print('6. Module')
                 sub_choice = int(input('Choose what operation you want to work with: '))
                 if sub_choice == 1:
-                    print(f'{x} + {y} = {sum(x, y)}')
+                    print(f'{x} + {y} = {sum(x, y)}\n')
                 elif sub_choice == 2:
-                    print(f'{x} - {y} = {sub(x, y)}')
+                    print(f'{x} - {y} = {sub(x, y)}\n')
                 elif sub_choice == 3:
-                    print(f'{x} * {y} = {mult(x, y)}')
+                    print(f'{x} * {y} = {mult(x, y)}\n')
                 elif sub_choice == 4:
-                    print(f'{x} / {y} = {div(x, y)}')
+                    print(f'{x} / {y} = {div(x, y)}\n')
                 elif sub_choice == 5:
-                    print(f'{x}**{y} = {pow(x, y)}')
+                    print(f'{x}**{y} = {pow(x, y)}\n')
                 elif sub_choice == 6:
-                    print(f'{x} % {y} = {mod(x, y)}')        
+                    print(f'{x} % {y} = {mod(x, y)}\n')        
             elif choice == 2:
                 x = int(input('Input your number: '))
                 print('1. Square Root')
@@ -95,13 +95,13 @@ def main():
                 print('3. Absolute Value')
                 sub_choice = int(input('Choose what operation you want to work with: '))
                 if sub_choice == 1:
-                    print(f'Square root of {x} = {sqrt(x)}')
+                    print(f'Square root of {x} = {sqrt(x)}\n')
                 elif sub_choice == 2:
-                    print(f'{x}! = {factorial(x)}')
+                    print(f'{x}! = {factorial(x)}\n')
                 elif sub_choice == 3:
-                    print(f'The absolute value of {x} = {absolute(x)}')
+                    print(f'The absolute value of {x} = {absolute(x)}\n')
             elif choice == 3:
-                x = int(input('Input your number: '))
+                x = int(input('Input your number: \n'))
                 print('1. Natural log')
                 print('2. Log Base 10 ')
                 print('3. Sine')
@@ -111,22 +111,22 @@ def main():
                 sub_choice = int(input('Choose what operation you want to work with: '))
                 
                 if sub_choice == 1:
-                    print(f'ln {x} = {natural_log(x)}')
+                    print(f'ln {x} = {natural_log(x)}\n')
                 elif sub_choice == 2:
-                    print(f'log10 {x} = {log_base10(x)}')
+                    print(f'log10 {x} = {log_base10(x)}\n')
                 elif sub_choice == 3:
-                    print(f'sin {x} = {sin(x)} rad')
+                    print(f'sin {x} = {sin(x)} rad\n')
                 elif sub_choice == 4:
-                    print(f'cos {x} = {cos(x)} rad')
+                    print(f'cos {x} = {cos(x)} rad\n')
                 elif sub_choice == 5:
-                    print(f'tan {x} = {tan(x)} rad')
+                    print(f'tan {x} = {tan(x)} rad\n')
                 elif sub_choice == 6:
-                    print(f'{x} rad = {rad_to_grad(x)}°')
+                    print(f'{x} rad = {rad_to_grad(x)}°\n')
     except ValueError:
-        print('An Error Has Ocurred, Please Try Again')
+        print('An Error Has Ocurred, Please Try Again\n')
         return main()
     except ZeroDivisionError:
-        print('You divided by 0, please try again')
+        print('You divided by 0, please try again\n')
         return main()
 
 
