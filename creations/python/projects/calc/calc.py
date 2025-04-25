@@ -109,16 +109,17 @@ def main():
                 print('5. Tangent')
                 print('6. Radians to Degrees')
                 sub_choice = int(input('Choose what operation you want to work with: '))
+                
                 if sub_choice == 1:
-                    print(f'ln{x} = {natural_log(x)}')
+                    print(f'ln {x} = {natural_log(x)}')
                 elif sub_choice == 2:
                     print(f'log10 {x} = {log_base10(x)}')
                 elif sub_choice == 3:
-                    print(f'sin {x} == {sin(x)} rad')
+                    print(f'sin {x} = {sin(x)} rad')
                 elif sub_choice == 4:
-                    print(f'cos {x} == {cos(x)} rad')
+                    print(f'cos {x} = {cos(x)} rad')
                 elif sub_choice == 5:
-                    print(f'tan {x} == {tan(x)} rad')
+                    print(f'tan {x} = {tan(x)} rad')
                 elif sub_choice == 6:
                     print(f'{x} rad = {rad_to_grad(x)}°')
     except ValueError:
