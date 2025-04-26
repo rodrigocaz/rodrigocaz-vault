@@ -67,8 +67,6 @@ def main():
                 print('Please Insert one of the available options')
                 continue
             if choice == 1:
-                x = int(input('Input your first number: '))
-                y = int(input('Input your second number: '))
                 print('1. Sum')
                 print('2. Sub')
                 print('3. Multiply')
@@ -76,6 +74,8 @@ def main():
                 print('5. Exponientation') # Exponiention is not basic math but this is the section in which were only going to work with two numbers
                 print('6. Module')
                 sub_choice = int(input('Choose what operation you want to work with: '))
+                x = int(input('Input your first number: '))
+                y = int(input('Input your second number: '))
                 if sub_choice == 1:
                     print(f'{x} + {y} = {sum(x, y)}\n')
                 elif sub_choice == 2:
@@ -89,11 +89,11 @@ def main():
                 elif sub_choice == 6:
                     print(f'{x} % {y} = {mod(x, y)}\n')        
             elif choice == 2:
-                x = int(input('Input your number: '))
                 print('1. Square Root')
                 print('2. Factorial')
                 print('3. Absolute Value')
                 sub_choice = int(input('Choose what operation you want to work with: '))
+                x = int(input('Input your number: '))
                 if sub_choice == 1:
                     print(f'Square root of {x} = {sqrt(x)}\n')
                 elif sub_choice == 2:
@@ -101,7 +101,6 @@ def main():
                 elif sub_choice == 3:
                     print(f'The absolute value of {x} = {absolute(x)}\n')
             elif choice == 3:
-                x = int(input('Input your number: \n'))
                 print('1. Natural log')
                 print('2. Log Base 10 ')
                 print('3. Sine')
@@ -109,6 +108,7 @@ def main():
                 print('5. Tangent')
                 print('6. Radians to Degrees')
                 sub_choice = int(input('Choose what operation you want to work with: '))
+                x = int(input('Input your number: '))
                 
                 if sub_choice == 1:
                     print(f'ln {x} = {natural_log(x)}\n')
