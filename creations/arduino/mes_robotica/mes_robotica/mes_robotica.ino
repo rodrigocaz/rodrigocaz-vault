@@ -80,6 +80,31 @@ void loop() {
   error = setPoint - posicion;
 
   integral += error;
-  derivada
+  derivada = error - errorAnterior;
+  errorAnterior = error;
+
+  salidaPID = Kp * error * Ki * integral + Kd * derivada;
+
+  int velocidadBase = 150;
+  int velocidadIzq = velocidadBase + salidaPID;
+  int velocidadDer = velocidadBase - salidaPID;
+
+  analogWrite(ENIzq, velocidadIzq);
+  analogWrite(ENDer, velocidadDer);
+
+  digitalWrite(IN1, HIGH); digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH); digitalWrite(IN4, LOW);
+
+  Serial.print("Posición: "); Serial.print(posicion);
+  Serial.print(" | Error: "); Serial.print(error);
+  Serial.print(" | PID: "); Serial.print(salidaPID);
+  Serial.print(" | VelI: "); Serial.print(velocidadIzq);
+  Serial.print(" | VelD: "); Serial.println(velocidadDer);
+
+  delay(10);
+ } 
+
+
+
 
 }
