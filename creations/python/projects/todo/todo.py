@@ -11,12 +11,12 @@ def show_todos():
     else:
         print('-------TASKS-------')
         for index, task in enumerate(todo):
-            print(f'Task {index + 1}: {task}')        
+            print(f'Task {index}: {task}')        
 
 def delete_task():
     show_todos()
     try:
-        byetask = int(input('Select the number of the task you want to delete'))
+        byetask = int(input('Select the number of the task you want to delete: '))
         if byetask >= 0 and byetask < len(todo):
             todo.pop(byetask)
             print(f'Task {byetask} has been removed from the todo list')
@@ -36,7 +36,7 @@ def main():
     while True:
         choice = int(input('Select an option from a menu: '))
         if choice == 4:
-            print('Thank you for usinf this app')
+            print('Thank you for using this app')
             break
         if choice == 1:
             add_task()
