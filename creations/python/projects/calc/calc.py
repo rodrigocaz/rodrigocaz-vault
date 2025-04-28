@@ -58,7 +58,7 @@ def main():
 
     try:
         while True:
-            choice = int(input('Choose which type of math you want to work with: '))
+            choice = int(input('Choose which type of math you want to work with (1/2/3/4): '))
 
             if choice == 4:
                 print('Happy Coding, have a nice day')
@@ -73,7 +73,7 @@ def main():
                 print('4. Divide')
                 print('5. Exponientation') # Exponiention is not basic math but this is the section in which were only going to work with two numbers
                 print('6. Module')
-                sub_choice = int(input('Choose what operation you want to work with: '))
+                sub_choice = int(input('Choose what operation you want to work with (1/2/3/4/5/6): '))
                 x = int(input('Input your first number: '))
                 y = int(input('Input your second number: '))
                 if sub_choice == 1:
@@ -92,7 +92,7 @@ def main():
                 print('1. Square Root')
                 print('2. Factorial')
                 print('3. Absolute Value')
-                sub_choice = int(input('Choose what operation you want to work with: '))
+                sub_choice = int(input('Choose what operation you want to work with (1/2/3): '))
                 x = int(input('Input your number: '))
                 if sub_choice == 1:
                     print(f'Square root of {x} = {sqrt(x)}\n')
@@ -107,7 +107,7 @@ def main():
                 print('4. Cosine')
                 print('5. Tangent')
                 print('6. Radians to Degrees')
-                sub_choice = int(input('Choose what operation you want to work with: '))
+                sub_choice = int(input('Choose what operation you want to work with (1/2/3/4/5/6): '))
                 x = int(input('Input your number: '))
                 
                 if sub_choice == 1:
