@@ -1,3 +1,21 @@
+-- Problemática:
+
+--La gestión y análisis del rendimiento en la Fórmula 1 es compleja debido a la gran cantidad de variables que influyen 
+--en el desempeño de los pilotos, escuderías y vehículos en distintas condiciones. 
+--Antes, esta información se encontraba dispersa en registros no integrados, dificultando la evaluación de desempeño, la predicción de resultados y 
+--la toma de decisiones estratégicas.
+
+
+--Justificación para crear la base de datos:
+
+--Se creó esta base de datos para centralizar y estructurar toda la información relevante de la Fórmula 1, permitiendo:
+	-- •	Llevar un historial completo de pilotos y escuderías.
+	-- •	Evaluar el impacto de componentes técnicos (como eficiencia y fiabilidad) en el rendimiento.
+	-- •	Analizar resultados de carreras considerando factores como clima, neumáticos y estrategias.
+	-- •	Comparar circuitos en cuanto a complejidad, altitud, tipo de pista, etc.
+	-- •	Realizar estudios de rendimiento por temporada, clima o características de circuito.
+
+
 CREATE TABLE piloto (
     piloto_id INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre Nvachar(120),
