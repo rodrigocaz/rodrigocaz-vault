@@ -1,14 +1,13 @@
-def convert_distance():
-    n = input('Insert the conversion you want to make : ')
-    conversions = {
-        'km': 1000,
-        'dm': 0.1,
-        'cm': 0.01,
-        'mm': 0.001,
-        }
-    lst = n.split()
-    num = int(lst[0])
-    conv = lst[-1]
-    rslt = num / conversions[conv]
-    return f'{num} {lst[1]} = {rslt} {conv}'
+from pyfiglet import Figlet
+import csv
+from tabulate import tabulate
+def main():
+    f = Figlet(font='slant')
+    print(f.renderText('UNIT CONVERTOR\n'))
+    print('For the unit convertor we will be using the International System of units\n ')
+    with open ('si.csv', 'r') as file:
+        rscv = csv.DictReader(file)
+        print(tabulate(rscv, headers = 'keys', tablefmt= 'grid'))
 
+if __name__ == '__main__':
+    main()
