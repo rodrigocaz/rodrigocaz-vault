@@ -1,9 +1,0 @@
-﻿UserID,Username,Password,Email,Role
-1,admin1,adminpass1,admin1@example.com,Admin
-2,admin2,adminpass2,admin2@example.com,Admin
-3,admin3,adminpass3,admin3@example.com,Admin
-4,user1,userpass1,user1@example.com,Normal
-5,user2,userpass2,user2@example.com,Normal
-6,user3,userpass3,user3@example.com,Normal
-7,user4,userpass4,user4@example.com,Normal
-8,user5,userpass5,user5@example.com,Normal
